@@ -1,0 +1,846 @@
+@font-face {
+  font-family: Geovana;
+  src: url(/geovana/Geovana.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Martel;
+  src: url(/martel/Martel-Light.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: open-sans;
+  src: url(/open-sans/OpenSans-Light.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: roboto-condensed;
+  src: url(/roboto-condensed/RobotoCondensed-Bold.ttf);
+  font-weight: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  -webkit-tap-highlight-color: transparent;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  position: relative;
+}
+#menuUlMobile {
+  display: none;
+}
+#menuIco {
+  display: none;
+}
+nav a {
+  text-decoration: none;
+  color: #101010;
+}
+nav .logo h1 a {
+  font-family: "Geovana";
+  font-size: 4rem;
+  margin: 0 1rem;
+  color: #12302e;
+  letter-spacing: 0.6rem;
+}
+section,
+footer {
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #12302e;
+  font-family: sans-serif;
+  margin: 0 2rem;
+  transition: 0.3s ease;
+}
+nav ul li a:hover {
+  color: #612f84;
+}
+header {
+  padding: 2rem;
+  width: 100%;
+}
+header .headerFlexDisp {
+  display: flex;
+  margin: 4rem auto;
+  width: 80%;
+  justify-content: center;
+}
+header .firstAboutSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50rem;
+}
+header .firstAboutSection h3 {
+  font-size: 9rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #212529;
+  line-height: 1.2;
+}
+header .firstAboutSection h4 {
+  margin-bottom: 2rem;
+  line-height: 2;
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-family: "Martel";
+  width: 50rem;
+}
+header .firstAboutSection button {
+  padding: 1rem;
+  width: 15rem;
+  font-size: 1.8rem;
+  height: 5.5rem;
+  background: #612f84;
+  border: none;
+  font-family: "open-sans";
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+header .firstAboutSection button a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+header .headerFlexDisp .image {
+  width: auto;
+  display: flex;
+  align-items: self-end;
+  margin-left: 2rem;
+}
+header .headerFlexDisp .image img {
+  height: 24rem;
+  margin-bottom: -3rem;
+}
+section.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10rem 5rem;
+}
+section.aboutMe h1 {
+  width: 78%;
+  margin-bottom: 6rem;
+  font-size: 2.8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #212529;
+}
+section.aboutMe .aboutMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.aboutMe ul {
+  width: auto;
+  list-style: none;
+}
+section.aboutMe ul li {
+  margin-bottom: 2rem;
+}
+section.aboutMe ul li a {
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-decoration: none;
+  border-bottom: 0.1rem solid;
+  font-family: "martel";
+  color: #612f84;
+  transition: 0.3s ease;
+}
+section.aboutMe ul li a:hover {
+  border-bottom: 0.1rem solid transparent;
+  color: #212529;
+}
+section.aboutMe p {
+  width: 50%;
+  font-size: 1.6rem;
+  margin-left: 10rem;
+  position: relative;
+  top: -6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+section.contact {
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.contact form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+section.contact form h1 {
+  font-size: 4rem;
+  font-family: "roboto-condensed";
+  color: #212529;
+  margin-bottom: 3rem;
+}
+section.contact form p {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  margin: 1rem 0;
+}
+section.contact form .formSec .item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 3rem 0;
+}
+section.contact form .formSec .item label {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-family: sans-serif;
+}
+section.contact form .formSec .item input {
+  padding: 1rem;
+  height: 5rem;
+  border: 0.1rem solid #212529;
+  border-radius: 0.5rem;
+}
+section.contact form .formSec .item textarea {
+  padding: 1rem;
+  border: 0.1rem solid #212529;
+  border-radius: 0.5rem;
+}
+section.contact form button {
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 13rem;
+  font-size: 1.7rem;
+  height: 5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  background: #612f84;
+}
+section.portfolio {
+  padding: 3rem 0;
+width: 100%;
+  overflow: hidden;
+}
+section.portfolio h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #212529;
+  margin: 2rem 9rem 13rem 25rem;
+  font-size: 4rem;
+  font-weight: 500;
+}
+section.standupApp h1 {
+  margin: 4rem;
+  width: 65%;
+  font-weight: bold;
+}
+section.portfolio .gridItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  cursor: pointer;
+  gap: 2rem;
+  width: calc(100% + 20px);
+}
+section.portfolio .gridItems .items {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s ease;
+  height: auto;
+  width: 100%;
+}
+section.portfolio .gridItems .items img {
+  width: auto;
+  height: 30rem;
+}
+
+section.portfolio .gridItems .items h2 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: sans-serif;
+  transition: 0.2s ease;
+  width: 100%;
+  text-align: center;
+  height: 60%;
+  bottom: -10rem;
+  left: 0;
+  padding: 2rem;
+  box-shadow: -10px -123px 47px -50px rgba(0, 0, 0, 0.65) inset;
+  -webkit-box-shadow: -10px -123px 47px -50px rgba(0, 0, 0, 0.65) inset;
+  -moz-box-shadow: -10px -123px 47px -50px rgba(0, 0, 0, 0.65) inset;
+  display: flex;
+  justify-content: space-around;
+  align-items: self-end;
+}
+section.portfolio .gridItems .items:hover h2 {
+  bottom: 0rem;
+}
+section.Blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.Blog h1 {
+  font-size: 4rem;
+ margin-bottom: 11rem;
+  width: 90%;
+  font-family: "roboto-condensed";
+  color: #212529;
+}
+section.Blog .mainBlogSection {
+  display: flex;
+  width: 90%;
+  margin: 5rem auto;
+  justify-content: center;
+}
+
+section.Blog .mainBlogSection .firstSection h2 {
+  font-size: 4rem;
+  font-family: "roboto-condensed";
+  color: #12302e;
+}
+section.Blog .mainBlogSection .firstSection a {
+  text-decoration: none;
+}
+section.Blog .mainBlogSection .firstSection h3 {
+  margin: 3rem 0;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+section.Blog .mainBlogSection .firstSection h3 a {
+  text-decoration: none;
+  color: #612f84;
+  font-size: 1.4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 0.1rem solid #612f84;
+}
+section.Blog .mainBlogSection .firstSection img {
+  height: 50rem;
+}
+section.Blog .mainBlogSection .firstSection p {
+  font-size: 1.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 1rem;
+  width: 72rem;
+  line-height: 2;
+}
+section.Blog .mainBlogSection .firstSection .blogsCard {
+  margin: 0rem 0 5rem 0;
+}
+section.Blog .mainBlogSection .secondSection {
+  width: 34rem;
+  padding: 3rem;
+  margin-left: 5rem;
+}
+section.Blog .mainBlogSection .secondSection form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+section.Blog .mainBlogSection .secondSection form input {
+  padding: 1rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid #212529;
+  border-radius: 0.5rem;
+}
+section.Blog .mainBlogSection .secondSection form button {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #612f84;
+  color: #ffffff;
+  height: 5.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+section.Blog .mainBlogSection .secondSection .recent {
+  position: relative;
+  margin-top: 8rem;
+}
+section.Blog .mainBlogSection .secondSection .recent ul {
+  list-style: none;
+}
+section.Blog .mainBlogSection .secondSection .recent ul li {
+  margin: 0 0 2rem 0;
+}
+section.Blog .mainBlogSection .secondSection .recent ul li a {
+  font-size: 1.3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  color: #612f84;
+  border-bottom: 0.1rem solid #612f84;
+  line-height: 1.5;
+}
+section.Blog .mainBlogSection .secondSection .recent h3 {
+  font-size: 1.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+section.standupApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.standupApp #header {
+  height: 40rem;
+}
+section.standupApp h3 {
+  font-size: 4rem;
+  width: 60%;
+  text-align: center;
+  line-height: 1.3;
+  margin: 5rem 0 3rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: #212529;
+}
+section.portfolio .mainPortSection {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+section.portfolio .mainPortSection .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.portfolio p {
+  width: 60%;
+  font-size: 1.6rem;
+  margin: 11rem 0 2rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 2;
+}
+section.portfolio ul {
+  width: 50%;
+}
+section.portfolio ul li {
+  width: 65%;
+  font-size: 1.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 2rem;
+}
+section.portfolio h4 {
+  margin: 3rem 0;
+  font-size: 1.6rem;
+  width: 60%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+  line-height: 2;
+  color: #212529;
+}
+section.portfolio .mainPortSection .card img {
+  height: 60rem;
+  margin: 2rem;
+}
+section.portfolio .mainPortSection .card p {
+  font-size: 2.3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 40rem;
+  text-align: center;
+  line-height: 2;
+}
+section.mainBlogInd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.mainBlogInd .innerContainer {
+  width: 65%;
+  margin: 3rem 0 0 0;
+}
+section.mainBlogInd .innerContainer img {
+  width: 100%;
+}
+section.mainBlogInd .innerContainer h2 {
+  font-size: 4rem;
+  font-family: "roboto-condensed";
+  color: #212529;
+}
+section.mainBlogInd .innerContainer h5 {
+  margin: 2rem 0 4rem 0;
+}
+section.mainBlogInd .innerContainer h5 a {
+  font-size: 1.4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid #612f84;
+  color: #612f84;
+}
+section.mainBlogInd .innerContainer .details h3 {
+  font-size: 3.2rem;
+  margin: 1rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #212529;
+  font-weight: 500;
+}
+section.mainBlogInd .innerContainer .details p {
+  font-size: 1.5rem;
+  margin: 1rem 0 3rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 2;
+}
+section.mainBlogInd .innerContainer .details ul {
+  margin: 3rem;
+}
+section.mainBlogInd .innerContainer .details ul li {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #212529;
+}
+section.mainBlogInd .innerContainer .details ul li span {
+  font-weight: bold;
+}
+section.mainBlogInd .innerContainer .profile {
+  display: flex;
+  margin: 10rem 0;
+}
+section.mainBlogInd .innerContainer .profile h3 {
+  font-size: 2.4rem;
+  margin: 1.5rem 4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #212529;
+  font-weight: 500;
+}
+section.mainBlogInd .innerContainer .profile img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+section.mainBlogInd .innerContainer .filedUnder h2 {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 9rem 0;
+  opacity: 0.8;
+}
+#paragra {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 6rem;
+  font-size: 2.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+section.hackathons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+section.hackathons .mainBlogSection {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+section.hackathons h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  margin: 0 0 12rem 0;
+}
+section.hackathons .mainBlogSection #hackathonsId a {
+  text-decoration: none;
+}
+section.hackathons .mainBlogSection #hackathonsId h2 {
+  font-size: 4rem;
+  font-family: "roboto-condensed";
+  color: #12302e;
+}
+section.Blog .mainBlogSection #hackathonsId h3 a {
+  text-decoration: none;
+  color: rgb(97, 47, 132);
+  font-size: 1.4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 0.1rem solid rgb(97, 47, 132);
+}
+section.Blog .mainBlogSection #hackathonsId h3 {
+  margin: 3rem 0;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+section.Blog .mainBlogSection #hackathonsId img {
+  width: 100%;
+}
+section.Blog .mainBlogSection #hackathonsId p {
+  font-size: 1.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 1rem;
+  width: 75rem;
+  line-height: 2;
+  width: 100%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  height: 10rem;
+}
+@media screen and (max-width: 1020px) {
+  section.Blog .mainBlogSection {
+    flex-direction: column;
+    margin: 4rem 0;
+  }
+  section.Blog .mainBlogSection .secondSection form {
+    top: 0;
+  }
+  section.Blog .mainBlogSection .secondSection .recent {
+    top: 0;
+    margin-top: 6rem;
+  }
+  section.Blog .mainBlogSection .secondSection {
+    width: 100%;
+    padding: 4rem 0;
+    margin: 0;
+  }
+  section.Blog .mainBlogSection .firstSection img {
+    width: 100%;
+    height: auto;
+  }
+  section.Blog .mainBlogSection .firstSection p {
+    width: 100%;
+  }
+  section.portfolio{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .firstAboutSection {
+    width: auto;
+  }
+  header .firstAboutSection h3 {
+    font-weight: 600;
+    font-size: 4rem;
+    width: 45rem;
+  }
+  header .firstAboutSection h4 {
+    font-size: 2.3rem;
+    width: 45rem;
+    margin-bottom: 3rem;
+  }
+  header .headerFlexDisp .image img {
+    height: 20rem;
+    margin-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.portfolio .gridItems {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.portfolio .gridItems .items img {
+    height: 100%;
+    width: 100%;
+  }
+  section.portfolio .gridItems .items {
+    height: auto;
+    width: 100%;
+  }
+  section.portfolio h1 {
+    margin: 3rem 9rem 10rem 4rem;
+  }
+  section.standupApp #header {
+    height: auto;
+    width: 100%;
+  }
+  section.standupApp h3 {
+    width: 95%;
+    font-size: 2.8rem;
+  }
+  section.portfolio .mainPortSection .card {
+    flex-direction: column;
+  }
+  section.contact form {
+    width: 100%;
+  }
+  nav {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+  section.hackathons .mainBlogSection {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  header .headerFlexDisp {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+  header .headerFlexDisp {
+    width: 100%;
+  }
+  header .firstAboutSection {
+    margin-bottom: 4rem;
+  }
+  header .headerFlexDisp .image img {
+    height: 25rem;
+  }
+  section.aboutMe .aboutMain {
+    flex-direction: column;
+    align-items: start;
+  }
+  section.aboutMe {
+    width: 100%;
+    padding: 5rem 2rem;
+  }
+  section.aboutMe p {
+    width: 100%;
+    font-size: 1.7rem;
+    position: relative;
+    top: 1rem;
+    margin: 0;
+  }
+  header .firstAboutSection h4 {
+    font-size: 2rem;
+  }
+  section.standupApp #header {
+    width: 90%;
+  }
+  section.standupApp h1 {
+    width: 90% !important;
+    margin: 1rem 0 3rem 0 !important;
+  }
+  #menuUl {
+    display: none;
+  }
+  #menuUlMobile {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 3rem 0 3rem;
+    list-style: none;
+    display: none;
+  }
+  #menuUlMobile li {
+    margin-bottom: 3rem;
+  }
+  #menuUlMobile li a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #101010;
+  }
+  #menuIco {
+    display: flex;
+  }
+  nav .logo h1 a {
+    margin: 0 2rem;
+    font-size: 3rem;
+    padding: 6rem 0 5rem;
+  }
+  nav .menu h1 {
+    font-size: 3rem;
+  }
+  .wrap {
+    max-width: 1280px;
+  }
+  section.mainBlogInd .innerContainer {
+    width: 95%;
+  }
+  section.portfolio p {
+    width: 90%;
+  }
+  section.portfolio ul {
+    width: 90%;
+  }
+  section.portfolio h4 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .firstAboutSection h3 {
+    font-size: 4rem;
+    width: 100%;
+  }
+  header .firstAboutSection h4 {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  header .headerFlexDisp .image img {
+    height: auto;
+    width: 100%;
+  }
+  header {
+    padding: 0;
+  }
+  nav .logo h1 a {
+    font-size: 2.5rem;
+  }
+  header .firstAboutSection {
+    padding: 2rem;
+  }
+  section.contact {
+    padding: 2rem;
+  }
+  section.portfolio .mainPortSection .card p {
+    width: 85%;
+  }
+  section.portfolio{
+    width: 100%;
+  }
+}
